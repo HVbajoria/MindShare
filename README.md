@@ -50,7 +50,7 @@ After you have **cloned, created the react app and replaced the files** follow t
 </br>
 
 ## If You Wish To See How The App Looks and Works : 🎬
-Checkout : https://www.youtube.com/watch?v=l997I5S2xC4&t=78s
+Checkout : https://youtu.be/l997I5S2xC4
 </br></br>
 
 ## Hope MindShare Helps You Get Rid Of Negative Emotions And Find Self Love and Peace You Were Missing. ❤️
