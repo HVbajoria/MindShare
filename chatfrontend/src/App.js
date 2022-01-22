@@ -7,24 +7,42 @@ import "./App.scss";
 import React from "react";
 import io from "socket.io-client";
 import Music from "./musicchat/musicchat";
-
+import Main from "./menu/menu";
+import Game from "./game/game";
 const socket = io.connect('/');
 
 function AppmainMusic() {
   return (
     <React.Fragment>
       <div className="right">
-        <Music
+        <Game
         />
       </div>
       <div className="left">
-        <Quotes />
+        <Music />
       </div>
     </React.Fragment>
   );
 }
 
 function Appmain(props) {
+  return (
+    <React.Fragment>
+      <div className="right">
+        <Chat
+          username={props.match.params.username}
+          roomname={props.match.params.roomname}
+          socket={socket}
+        />
+      </div>
+      <div className="left">
+        <Main />
+      </div>
+    </React.Fragment>
+  );
+}
+
+function Chatquote(props) {
   return (
     <React.Fragment>
       <div className="right">
@@ -54,6 +72,7 @@ function App() {
           </Route>
           <Route path="/chat/:roomname/:username" component={Appmain} />
           <Route path="/music/:roomname/:username" component={AppmainMusic} />
+          <Route path="/chat/:roomname/quotes" component={Chatquote} />
         </Switch>
       </div>
     </Router>
