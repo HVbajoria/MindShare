@@ -15,11 +15,10 @@ function AppmainMusic() {
   return (
     <React.Fragment>
       <div className="right">
-        <Game
-        />
+      <Quotes />
       </div>
       <div className="left">
-        <Music />
+        <Game />
       </div>
     </React.Fragment>
   );
@@ -36,7 +35,7 @@ function Appmain(props) {
         />
       </div>
       <div className="left">
-        <Main />
+        <Music />
       </div>
     </React.Fragment>
   );
@@ -71,8 +70,7 @@ function App() {
             <Home socket={socket} />
           </Route>
           <Route path="/chat/:roomname/:username" component={Appmain} />
-          <Route path="/music/:roomname/:username" component={AppmainMusic} />
-          <Route path="/chat/:roomname/quotes" component={Chatquote} />
+          <Route path="/game/:roomname/:username" component={AppmainMusic} />
         </Switch>
       </div>
     </Router>

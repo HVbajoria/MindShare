@@ -17,7 +17,10 @@ export default function App() {
     <div>
       <div className="container">
         <h1>Memory Game</h1>
-        <div>High Score: {highScore}</div>
+        <div>
+          <h2>High Score: {highScore}
+          </h2>
+          </div>
         <div>
           {options === null ? (
             <>
@@ -49,16 +52,15 @@ export default function App() {
       font-family: -apple-system, sans-serif;
       justify-content: center;
       flex-direction:column;
-      align-items:center;
     }
     .container {
       width: 660px;
       display: grid;
       align-items: center;
       margin-bottom: 20px;
-      margin-right: 34px;
+      margin-right: 12px;
       margin-left:3px;
-      flex-direction:column;
+      
       justify-content: center;
     }
     button {
@@ -67,6 +69,7 @@ export default function App() {
       font-weight: 400;
       color: #fff;
       border: none;
+      font-size: 1.6rem;
       padding: 2px 12px;
       margin-left: 6px;
       cursor: pointer;
@@ -90,6 +93,7 @@ export default function App() {
     }
     .card:not(:nth-child(6n)) {
       margin-right: 10px;
+      height: 80px;
     }
 
     .c {

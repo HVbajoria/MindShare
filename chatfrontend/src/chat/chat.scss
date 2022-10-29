@@ -11,12 +11,12 @@
   }
 
   &::-webkit-scrollbar-thumb {
-    border-radius: 10px;
+    border-radius: 13px;
     background: $foreground-color;
   }
 
   &::-webkit-scrollbar-track {
-    border-radius: 10px;
+    border-radius: 13px;
     background: $background-color;
   }
 
@@ -28,16 +28,17 @@
 }
 .chat {
   display: flex;
-  width: 400px;
+  width: 600px;
   padding: 1rem;
   justify-content: space-between;
-  height: 600px;
+  height: 800px;
   flex-direction: column;
   background: rgb(8, 7, 104);
 background: linear-gradient(124deg, rgb(6, 123, 138) 0%, rgb(87, 9, 117) 35%, rgb(18, 7, 121) 100%);
   .user-name {
     width: 100%;
     text-align: start;
+    font-size: 1.2rem;
     h2 {
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
       font-weight: 300;
@@ -59,7 +60,7 @@ background: linear-gradient(124deg, rgb(6, 123, 138) 0%, rgb(87, 9, 117) 35%, rg
       margin-left: 0px;
       p {
         color: #ffffff;
-        font-size: 1rem;
+        font-size: 1.2rem;
         font-weight: 300;
         background-color: #726e6b;
         border-radius: 0px 10px 10px 10px;
@@ -68,7 +69,7 @@ background: linear-gradient(124deg, rgb(6, 123, 138) 0%, rgb(87, 9, 117) 35%, rg
 
       span {
         color: #eff2fc;
-        font-size: 0.6rem;
+        font-size: 0.9rem;
         padding-left: 0.5rem;
         font-weight: 200;
       }
@@ -96,7 +97,7 @@ background: linear-gradient(124deg, rgb(6, 123, 138) 0%, rgb(87, 9, 117) 35%, rg
   }
 
   .send {
-    height: 50px;
+    height: 70px;
     display: flex;
     width: 100%;
     input {
@@ -106,15 +107,18 @@ background: linear-gradient(124deg, rgb(6, 123, 138) 0%, rgb(87, 9, 117) 35%, rg
       text-decoration: none;
       border-radius: 5px 0px 0px 5px;
       border: none;
+      font-size: 1.3rem;
       &:focus {
         outline: none;
       }
     }
     button {
       background-color: $yellowColor;
-      width: 20%;
+      width: 30%;
       border-radius: 0px 5px 5px 0px;
       border: none;
+      font-size: 1.3rem;
+      font-weight: 400;
       &:hover {
         cursor: pointer;
       }

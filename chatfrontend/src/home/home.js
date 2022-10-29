@@ -28,7 +28,7 @@ function Homepage({ socket }) {
 
   return (
     <div className="homepage">
-      <img src={logo} height={150} width={150} />
+      <img src={logo} height={250} width={250} />
       <h1>Welcome To MindShare</h1>
       <input
         placeholder="Please Enter Your Name"
@@ -44,8 +44,8 @@ function Homepage({ socket }) {
       <Link to={`/chat/${roomname}/${username}`}>
         <button onClick={sendData}>Join Chat</button>
       </Link>
-      <Link to={`/music/${roomname}/${username}`}>
-        <button onClick={sendData1}>Join Music</button>
+      <Link to={`/game/${roomname}/${username}`}>
+        <button onClick={sendData1}>Join Game</button>
       </Link>
       </div>
     </div>
